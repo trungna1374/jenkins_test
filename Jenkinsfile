@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                sh 'sudo mvn clean install'
+                sh 'mvn clean install'
             }
         }
         stage('Deploy') {

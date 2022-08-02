@@ -14,3 +14,15 @@ services:
       - type: bind
         source: /var/log/cdpdashboard
         target: /var/log/cdpdashboard
+  database:
+    platform: linux/x86_64
+    container_name: db-cantera-api
+    image: mysql:5.7
+    ports:
+        - "33031:3306"
+    # command: --init-file /data/application/init.sql
+    volumes:
+        - ./data/:/data/
+    environment:
+      MYSQL_ROOT_PASSWORD: morhn@2022
+    restart: always

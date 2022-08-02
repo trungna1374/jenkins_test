@@ -4,7 +4,7 @@ volumes:
   logs_development: {}
 services:
   app:
-    platform: linux/x86_64 # specify the architecture here
+    platform: linux/x86_64
     container_name: jenkins-test-spring-boot
     image: jenkins-test-spring-boot
     build: ./

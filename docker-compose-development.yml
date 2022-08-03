@@ -25,4 +25,4 @@ services:
         - ./src/main/resources/db/:/data/
     environment:
       MYSQL_ROOT_PASSWORD: morhn@2022
-    restart: always
+#     restart: always

@@ -17,7 +17,7 @@ services:
   database:
     platform: linux/x86_64
     container_name: cantera-api-db
-    image: mysql:5.7
+    image: mysql:8.0
     ports:
         - "33031:3306"
     command: --init-file /data/cantera_api_db_init.sql

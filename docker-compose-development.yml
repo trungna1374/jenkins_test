@@ -17,12 +17,12 @@ services:
   database:
     platform: linux/x86_64
     container_name: cantera-api-db
-    image: mysql:8.0
+    image: mysql:5.7
     ports:
         - "33031:3306"
 #     command: --init-file /data/cantera_api_db_init.sql
     volumes:
-        - ./src/main/resources/db/:/data/
+        - './src/main/resources/db:/data'
     environment:
       MYSQL_ROOT_PASSWORD: morhn@2022
 #     restart: always

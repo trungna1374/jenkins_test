@@ -20,7 +20,7 @@ services:
     image: mysql:5.7
     ports:
         - "33031:3306"
-    command: --init-file ./src/main/resources/db
+    command: --init-file ./src/main/resources/db/cantera_api_db_init.sql
     volumes:
         - ./data/:/data/
     environment:

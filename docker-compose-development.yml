@@ -15,7 +15,6 @@ services:
         source: /var/log/cdpdashboard
         target: /var/log/cdpdashboard
   database:
-    platform: linux/x86_64
     container_name: cantera-api-db
     image: mysql:5.7
     ports:
